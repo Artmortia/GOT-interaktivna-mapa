@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="Images/Stylesheet.css">
+<link rel="stylesheet" type="text/css" href="Images/mapinfo.css">
+<!--js-->
+<script src="js/jquery-1.11.1.min.js"></script> 
+<meta charset="utf-8">
+
+
+<title>GOT - Interaktivna mapa</title>
+
+</head>
+<body>
+<a name="top"></a>
+<div id = "container">
+	<div id = "header_bar">
+	<div id = "navigation_bar">
+		<ul>
+			<a href="index.html"><li>HOME</li></a>
+			<a href="stark.html"><li>STARK</li></a>
+			<a href="baratheon.html"><li>BARATHEON</li></a>
+			<a href="targaryen.html"><li>TARGARYEN</li></a>
+			<a href="lannister.html"><li>LANNISTER</li></a>
+			<a href="greyjoy.html"><li>GREYJOY</li></a>
+			
+			
+		 </ul>
+	</div></div>
+	<div id = "header"></div>
+	<div id = "navwrap">
+	
+	
+	</div>
+	<div class = "menu">
+	<div class = "images"> 
+	
+			
+			
+			<a name = "stark" href="stark.html"><img id = "stark" src="Images/nav_stark.jpg" width="160" height="194" alt=""/></a>
+			
+			<a href="baratheon.html"><img id = "baratheon" src="Images/nav_baratheon.jpg" width="160" height="194" alt=""/></a> 
+			<a href="targaryen.html"><img id = "targaryen" src="Images/nav_targaryen.jpg" width="160" height="194" alt=""/></a> 
+			<a href="lannister.html"><img id = "lannister" src="Images/nav_lannister.jpg" width="160" height="194" alt=""/></a> 
+			<a href="greyjoy.html"><img id = "greyjoy" src="Images/nav_greyjoy.jpg" width="160" height="194" alt=""/></a> 
+			
+	  </div>
+	</div>
+  <div id = "int_map_naziv">Interactive Game of Thrones Map</div>
+  <div id = "map_wrapper">
+   <div id = "interactive_map">
+	<img src="Images/interactive_map.jpg" alt="" width="1298" height="755" usemap="#mapa" id = "map"/>
+    <map name="mapa">
+    
+	<area shape="rect" id="TheWall"  coords="323,44,413,59" href="#TheWall" onMouseOver="document.getElementById('wall').style.display = 'block';" onmouseout="document.getElementById('wall').style.display = 'none';">
+     
+    <area shape="circle" id="KingsLanding" coords="405,422,16" href="#KingsLanding" onMouseOver="document.getElementById('capital').style.display = 'block'" onmouseout="document.getElementById('capital').style.display = 'none';">
+      
+    <area shape="circle" id="BearIsland" coords="264,90,13" href="#BearIsland" onMouseOver="document.getElementById('bearisland').style.display = 'block'" onmouseout="document.getElementById('bearisland').style.display = 'none';">
+    
+    <area shape="circle" id="TheEyrie" coords="411,324,17" href="#TheEyrie" onMouseOver="document.getElementById('eyrie').style.display = 'block'" onmouseout="document.getElementById('eyrie').style.display = 'none';">
+    
+    <area shape="circle" id="Braavos" coords="546,287,12" href="#Braavos" onMouseOver="document.getElementById('braavos').style.display = 'block'" onmouseout="document.getElementById('braavos').style.display = 'none';">
+    
+    <area shape="circle" id="Winterfell" coords="327,157,13" href="#Winterfell" onMouseOver="document.getElementById('winterfell').style.display = 'block'" onmouseout="document.getElementById('winterfell').style.display = 'none';">
+    
+    <area shape="circle" id="Meereen" coords="972,532,14" href="#Meereen" onMouseOver="document.getElementById('meereen').style.display = 'block'" onmouseout="document.getElementById('meereen').style.display = 'none';">
+    
+    <area shape="rect" id="TheDothrakiSea" coords="713,369,1169,502" href="#TheDothrakiSea" onMouseOver="document.getElementById('dothraki').style.display = 'block'" onmouseout="document.getElementById('dothraki').style.display = 'none';">
+    
+    <area shape="circle" id="Dragonstone" coords="451,395,12" href="#Dragonstone" onMouseOver="document.getElementById('dragonstone').style.display = 'block'" onmouseout="document.getElementById('dragonstone').style.display = 'none';">
+    </map>
+    <div id="wall" hidden="">The Wall</div>
+   	  <div id="wallmark"><img src="Images/mark.png" width="30" height="30" alt="" /></div>
+    <div id="capital" hidden="">Kings Landing</div>
+   		<div id="capitalmark"><img src="Images/mark.png" width="30" height="30" alt=""/></div>
+    <div id="bearisland" hidden="">Bear Island</div>
+    	<div id="bearislandmark"><img src="Images/mark.png" width="30" height="30" alt=""/></div>
+    <div id="eyrie" hidden="">The Eyrie</div>
+    	<div id="eyriemark"><img src="Images/mark.png" width="30" height="30" alt=""/></div>
+    <div id="braavos" hidden="">Braavos</div>
+    	<div id="braavosmark"><img src="Images/mark.png" width="30" height="30" alt=""/></div>
+    <div id="winterfell" hidden="">Winterfell</div>
+    	<div id="winterfellmark"><img src="Images/mark.png" width="30" height="30" alt=""/></div>
+    <div id="meereen" hidden="">Meereen</div>
+    	<div id="meereenmark"><img src="Images/mark.png" width="30" height="30" alt=""/></div>
+    <div id="dothraki" hidden="">The Dothraki Sea</div>
+    	<div id="dothrakimark"><img src="Images/mark.png" width="30" height="30" alt=""/></div>
+    <div id="dragonstone" hidden="">Dragonstone</div>
+		<div id="dragonstonemark"><img src="Images/mark.png" width="30" height="30" alt=""/></div>
+    
+    <div class="MapContents">
+    	<div class="TheWall" tabindex="-1">
+			 <a class="close" href="#TheWall"><img class="close_button" src="Images/close_button.PNG" width="30" height="30" alt=""/></a>
+			<p>The Wall is a massive barrier of mostly ice stretching across the northern border of the Seven Kingdoms, separating it from the wild lands beyond. The Wall is one hundred leagues long(three hundred miles) and reaches over seven hundred feet at his highest point, although some foundation blocks in hilly regions, such as near Greyguard, send it nine hundred feet in the air.</p>
+   			<br/>
+   			<iframe width="360" height="215" src="https://www.youtube.com/embed/kGcKOXk9Qbs" frameborder="0" allowfullscreen id="clearSound"></iframe>
+   			<br/>
+    	</div>
+    	<div class="KingsLanding" tabindex="-1">
+    		<a class="close" href="#KingsLanding"><img class="close_button" src="Images/close_button.PNG" width="30" height="30" alt=""/></a>
+    		<p>King's Landing is the capital of the Seven Kingdoms, located in the crownlands on the east coast of Westeros. It is situated along the kingsroad at the mouth of the Blackwater Rush and overlooks Blackwater Bay. King's Landing is the site of the Iron Throne and the Red Keep, which is the seat of the king, Robert I from House Baratheon of King's Landing. The main city is surrounded by a wall, manned by the City Watch of King's Landing, also known as the gold cloaks. King's Landing is the most populous city in Westeros, but unsightly and dirty compared to other cities. Poorer smallfolk build shanty settlements outside the city. The stench of the city's waste can be smelled far beyond its walls.</p>
+    		<center>
+    	      <img id = "kings_landing" src="Images/kings_landings_img.jpg" width="250" height="121" alt=""/>
+  	      </center>
+    	</div>
+    	<div class="BearIsland" tabindex="-1"> <a class="close" href="#BearIsland"><img class="close_button" src="Images/close_button.PNG" width="30" height="30" alt=""/></a>
+    	    <p>Bear Island is a remote island in the north that is home to House Mormont. It lies within the Bay of Ice, north of Deepwood Motte and south of the Frozen Shore.The Mormonts live at Mormont Keep.</p>
+    	    <p>House Mormont of Bear Island is an old, proud, and honorable house of the north, one of the principal families sworn to House Stark. Their seat is at Bear Island, located in the Bay of Ice far to the north-west of Winterfell. Their blazon is a black bear over a green wood and their motto is "Here We Stand".</p>
+    	    <center>
+    	      <img id = "house_mormont" src="Images/House_Mormont.PNG" width="120" height="171" alt=""/>
+  	      </center>
+  	    </div>
+  	    <div class="TheEyrie" tabindex="-1"> <a class="close" href="#TheEyrie"><img class="close_button" src="Images/close_button.PNG" width="30" height="30" alt=""/></a>
+    	    <p>The Eyrie is an ancient castle and seat of House Arryn, one of the oldest lines of Andal nobility, within the Vale of Arryn. It is situated in the Mountains of the Moon astride the peak known as the Giant's Lance, several thousand feet above the valley below. Although small compared to the seats of other Great Houses in Westeros, the Eyrie is considered impregnable to attack. During winter years, the Arryns seek refuge against the cold at the base of the mountain in the Gates of the Moon.</p>
+    	    <center>
+    	      <img id = "the_eyrie" src="Images/The_Eyrie.png" width="170" height="171" alt=""/>
+  	      </center>
+  	    </div>
+  	     <div class="Braavos" tabindex="-1"> <a class="close" href="#Braavos"><img class="close_button" src="Images/close_button.PNG" width="30" height="30" alt=""/></a>
+    	    <p>Braavos is the wealthiest and likely the most powerful of the Free Cities. It is located in a lagoon on the northwestern end of Essos, where the narrow sea and the Shivering Sea meet. Braavos is also known as Braavos of the Hundred Isles and the Secret City, a name also attributed to the city Nefer, the last remaining city of N'ghai. Additionally, Braavos is sometimes referred to as the bastard daughter of Valyria</p>
+    	    <center>
+    	      <img id = "braavos_img" src="Images/braavos_img.jpg" width="170" height="211" alt=""/>
+  	      </center>
+  	    </div>
+  	     <div class="Winterfell" tabindex="-1"> <a class="close" href="#Winterfell"><img class="close_button" src="Images/close_button.PNG" width="30" height="30" alt=""/></a>
+    	    <p>Winterfell is the ancestral castle and seat of power of House Stark and is considered to be the capital of the north. It is located in the center of the northernmost province of the Seven Kingdoms, on the kingsroad that runs from Storm's End to the Wall. It is situated at the eastern edge of the wolfswood, north of the western branch of the White Knife and Castle Cerwyn. Winterfell is south of the northern mountains and southwest of Long Lake, one hundred leagues (three hundred miles) southeast of Deepwood Motte.</p>
+    	    <center>
+    	      <img id = "Winterfell_img" src="Images/winterfell_img.JPG" width="180" height="171" alt=""/>
+  	      </center>
+  	    </div>
+        <div class="Meereen" tabindex="-1"> <a class="close" href="#Meereen"><img class="close_button" src="Images/close_button.PNG" width="30" height="30" alt=""/></a>
+    	    <p>Meereen is the northernmost and the largest of the three great Slaver Cities of Slaver's Bay. It is ruled by the Great Masters, the heads of Meereen's slaving families, and its wealthiest of citizens live in stepped pyramids. Meereen lies on the northeast coast of Slaver's Bay at the mouth of the Skahazadhan, where it flows from its origins in Lhazar through a range of sandstone mountains separating Meereen and the rest of Slaver's Bay from the red waste.  The Dothraki sea lies to the north, beyond the river. To reach Lhazar from Meereen one must pass through the Khyzai Pass.</p>
+    	    <center>
+    	      <img id = "Meereen_img" src="Images/meereen.png" width="230" height="167" alt=""/>
+  	      </center>
+  	    </div>
+  	     <div class="TheDothrakiSea" tabindex="-1"> <a class="close" href="#TheDothrakiSea"><img class="close_button" src="Images/close_button.PNG" width="30" height="30" alt=""/></a>
+    	    <p>The Dothraki sea is a vast inland region of the continent of Essos, located east of the Free Cities, north of Slaver's Bay, and west of the Bone Mountains. Its landscape of steppes and plains is home to the nomadic Dothraki equestrian people, who constantly battle each other and raid surrounding lands.</p>
+    	    <center>
+    	      <img id = "TheDothrakiSea_img" src="Images/dothrakisea_img.jpg" width="320" height="171" alt=""/>
+  	      </center>
+  	    </div>
+  	     <div class="Dragonstone" tabindex="-1"> <a class="close" href="#Dragonstone"><img class="close_button" src="Images/close_button.PNG" width="30" height="30" alt=""/></a>
+    	    <p>Dragonstone is a castle located on the island of the same name at the entrance to Blackwater Bay. Located below the Dragonmont and shaped from stone to look like dragons, Dragonstone was the original seat of House Targaryen in Westeros, and had been colonized and fortified as the westernmost outpost of the Valyrian Freehold. The castle has a dark reputation. <br/><br/>After Robert Baratheon overthrew the Targaryens in Robert's Rebellion, he gave the castle to his brother Stannis, creating House Baratheon of Dragonstone.</p>
+    	    <center>
+    	      <img id = "Dragonstone_img" src="Images/dragonstone_img.jpg" width="270" height="160" alt=""/>
+  	      </center>
+  	    </div>
+</div>
+    
+   </div>
+  </div>
+  
+ <div id = "footer">
+ 	
+ </div>
+ <div id = "footer_bar">
+	<div id = "navigation_bar_footer">
+		<ul>
+			<a href="index.html"><li>Home</li></a>
+			<a href="stark.html"><li>Stark</li></a>
+			<a href="baratheon.html"><li>Baratheon</li></a>
+			<a href="targaryen.html"><li>Targaryen</li></a>
+			<a href="lannister.html"><li>Lannister</li></a>
+			<a href="greyjoy.html"><li>Greyjoy</li></a>
+			<li><a href="#top">Back to top</a></li>		
+		 </ul>
+	</div></div>	 
+
+</div>
+<script src="js/map.js"></script>
+</body>
+</html>

@@ -1,0 +1,343 @@
+#wall{
+	height: 23px;
+	width: 71px;
+	position: absolute;
+	top: 63px;
+	left: 414px;
+	z-index: 1;
+	background-color: #CCBF9C;
+	text-align: center;
+	border-radius: 5px;
+
+}
+
+#capital{
+	height: 46px;
+	width: 58px;
+	position: absolute;
+	top: 437px;
+	left: 422px;
+	z-index: 2;
+	background-color: #CCBF9C;
+	text-align: center;
+	border-radius: 5px;
+}
+
+#bearisland{
+	height: 46px;
+	width: 58px;
+	position: absolute;
+	top: 105px;
+	left: 285px;
+	z-index: 2;
+	background-color: #CCBF9C;
+	text-align: center;
+	border-radius: 5px;
+}
+#eyrie{
+	height: 26px;
+	width: 60px;
+	position: absolute;
+	top: 316px;
+	left: 425px;
+	z-index: 2;
+	background-color: #CCBF9C;
+	text-align: center;
+	border-radius: 5px;
+}
+#winterfell{
+	height: 26px;
+	width: 70px;
+	position: absolute;
+	top: 176px;
+	left: 348px;
+	z-index: 2;
+	background-color: #CCBF9C;
+	text-align: center;
+	border-radius: 5px;
+}
+#dothraki{
+	height: 63px;
+	width: 70px;
+	position: absolute;
+	top: 344px;
+	left: 924px;
+	z-index: 2;
+	background-color: #CCBF9C;
+	text-align: center;
+	border-radius: 5px;
+}
+#meereen{
+	height: 26px;
+	width: 70px;
+	position: absolute;
+	top: 556px;
+	left: 989px;
+	z-index: 2;
+	background-color: #CCBF9C;
+	text-align: center;
+	border-radius: 5px;
+}
+#braavos{
+	height: 26px;
+	width: 60px;
+	position: absolute;
+	top: 287px;
+	left: 559px;
+	z-index: 2;
+	background-color: #CCBF9C;
+	text-align: center;
+	border-radius: 5px;
+}
+#dragonstone{
+	height: 26px;
+	width: 90px;
+	position: absolute;
+	top: 367px;
+	left: 460px;
+	z-index: 2;
+	background-color: #CCBF9C;
+	text-align: center;
+	border-radius: 5px;
+}
+#wallmark{
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	top: 66px;
+	left: 353px;
+	z-index: 3;
+	pointer-events: none;
+}
+#capitalmark{
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	top: 444px;
+	left: 389px;
+	z-index: 3;
+	pointer-events: none;
+}
+#bearislandmark{
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	top: 112px;
+	left: 248px;
+	z-index: 3;
+	pointer-events: none;
+}
+#braavosmark{
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	top: 308px;
+	left: 530px;
+	z-index: 3;
+	pointer-events: none;
+}
+#dothrakimark{
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	top: 456px;
+	left: 933px;
+	z-index: 3;
+	pointer-events: none;
+}
+#dragonstonemark{
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	top: 416px;
+	left: 436px;
+	z-index: 3;
+	pointer-events: none;
+}
+#winterfellmark{
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	top: 174px;
+	left: 311px;
+	z-index: 3;
+	pointer-events: none;
+}
+#meereenmark{
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	top: 553px;
+	left: 957px;
+	z-index: 3;
+	pointer-events: none;
+}
+#eyriemark{
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	top: 346px;
+	left: 396px;
+	z-index: 3;
+	pointer-events: none;
+}
+
+.MapContents{
+	top: 57px;
+	left: 463px;
+	position: absolute;
+	height: 435px;
+	width: 380px;
+	z-index: 30;
+	pointer-events: none;
+	
+}
+
+.MapContents div{
+    -webkit-filter: drop-shadow(6px 6px 6px #222);
+    filter: drop-shadow(6px 6px 6px #222);
+	border: 5px solid white;
+}
+
+.MapContents div img:not(.close_button){
+    border: 5px solid white;
+    -webkit-filter: drop-shadow(6px 6px 6px #222);
+    filter: drop-shadow(6px 6px 6px #222);
+}
+.TheWall{
+	top: 0px;
+	left: 0px;
+	position: relative;
+	height: 432px;
+	width: 375px;
+	z-index: 3;
+	padding-top: 1px;
+	padding-left: 10px;
+	background-color:#202427;
+	border-radius: 20px;
+	display: none;
+	outline: 0;
+	pointer-events:auto;
+}
+
+.KingsLanding{
+	top: 0px;
+	left: 0px;
+	position: relative;
+	height: 432px;
+	width: 375px;
+	z-index: 4;
+	padding-top: 1px;
+	padding-left: 10px;
+	background-color: #202427;
+	border-radius: 20px;
+	display: none;
+	outline: 0;
+	pointer-events:auto;
+}
+
+.BearIsland{
+	top: 0px;
+	left: 0px;
+	position: relative;
+	height: 460px;
+	width: 375px;
+	z-index: 5;
+	padding-top: 1px;
+	padding-left: 10px;
+	background-color: #202427;
+	border-radius: 20px;
+	display: none;
+	outline: 0;
+	pointer-events:auto;
+}
+.TheEyrie{
+	top: 0px;
+	left: 0px;
+	position: relative;
+	height: 432px;
+	width: 375px;
+	z-index: 6;
+	padding-top: 1px;
+	padding-left: 10px;
+	background-color: #202427;
+	border-radius: 20px;
+	display: none;
+	outline: 0;
+	pointer-events:auto;
+}
+.Braavos{
+	top: 0px;
+	left: 0px;
+	position: relative;
+	height: 432px;
+	width: 375px;
+	z-index: 7;
+	padding-top: 1px;
+	padding-left: 10px;
+	background-color: #202427;
+	border-radius: 20px;
+	display: none;
+	outline: 0;
+	pointer-events:auto;
+}
+.Winterfell{
+	top: 0px;
+	left: 0px;
+	position: relative;
+	height: 432px;
+	width: 375px;
+	z-index: 8;
+	padding-top: 1px;
+	padding-left: 10px;
+	background-color: #202427;
+	border-radius: 20px;
+	display: none;
+	outline: 0;
+	pointer-events:auto;
+}
+.Dragonstone{
+	top: 0px;
+	left: 0px;
+	position: relative;
+	height: 432px;
+	width: 375px;
+	z-index: 9;
+	padding-top: 1px;
+	padding-left: 10px;
+	background-color: #202427;
+	border-radius: 20px;
+	display: none;
+	outline: 0;
+	pointer-events:auto;
+}
+.TheDothrakiSea{
+	top: 0px;
+	left: 0px;
+	position: relative;
+	height: 432px;
+	width: 375px;
+	z-index: 10;
+	padding-top: 1px;
+	padding-left: 10px;
+	background-color: #202427;
+	border-radius: 20px;
+	display: none;
+	outline: 0;
+	pointer-events:auto;
+}
+.Meereen{
+	top: 0px;
+	left: 0px;
+	position: relative;
+	height: 432px;
+	width: 375px;
+	z-index: 11;
+	padding-top: 1px;
+	padding-left: 10px;
+	background-color: #202427;
+	border-radius: 20px;
+	display: none;
+	outline: 0;
+	pointer-events:auto;
+}
